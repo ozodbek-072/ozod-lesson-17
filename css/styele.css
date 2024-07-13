@@ -1,0 +1,55 @@
+  body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+        .container {
+            width: 500px;
+            height: 500px;
+           background-image: url(../img/MEY3R.png);
+            position: relative;
+            overflow: hidden;
+        }
+        .circle {
+            width: 150px;
+            height: 150px;
+            background-image: url(../img/Без\ названия.jpeg);
+            border-radius: 50%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            animation: move 4s infinite;
+        }
+        @keyframes move {
+            0% {
+              background-image: url(../img/images\ \(1\).jpeg);
+                top: 0;
+                left: 0;
+            }
+            25% {
+              background-image: url(../img/Без\ названия\ \(1\).jpeg);
+                top: 100%;
+                left: 100%;
+                transform: translate(-100%, -100%);
+            }
+            50% {
+              background-image: url(../img/Без\ названия\ \(2\).jpeg);
+                top: 100%;
+                left: 0;
+                transform: translateY(-100%);
+            }
+            75% {
+              background-image: url(../img/images\ \(2\).jpeg);
+                top: 0;
+                left: 100%;
+                transform: translateX(-100%);
+            }
+            100% {
+              background-image: url(../img/images\ \(2\).png);
+                top: 0;
+                left: 0;
+            }
+        }
